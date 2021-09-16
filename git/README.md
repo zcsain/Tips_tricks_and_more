@@ -4,7 +4,7 @@
 
 #### In .gitconfig file:
 
-`[alias]` _alias_code_name_ = _git_command_
+`[alias] alias_code_name = git_command`
 
 example (prints all known commits, one line per commit):
 
@@ -12,7 +12,7 @@ example (prints all known commits, one line per commit):
 
 #### From terminal:
 
-`git config --global alias.`_alias_code_word_ '_git_command_'
+`git config --global alias.alias_code_word 'git_command'`
 
 example (prints all known commits, one line per commit):
 
@@ -20,15 +20,18 @@ git config \-\-global alias.onelog 'log \-\-oneline'
 
 #### Multiple Commands and Parameters
 
-`[alias]` _alias_code_word_ = git _command_1_ `$1` `&&`git _command_1_ `&& :`
+`[alias] alias_code_word = git_command_1 $1 && git_command_2 && :`
 
 - `!` pass all that follows to the shell
 - `$1` first parameter
 - `&&` if the previous command turns 0 (success), then run the command after &&
 
-example (stages all changes and displays status):
+example (stages changes and displays status, stages all changes if $1 = "."):
 
 [alias] adds = !git add $1 && git status && :
+
+call from terminal:
+`git adds .`
 
 #### Resources
 
