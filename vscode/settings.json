@@ -1,0 +1,19 @@
+{
+    "editor.fontSize": 14,
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "CodeSandbox",
+    "editor.renderIndentGuides": false,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "bracket-pair-colorizer-2.colorMode": "Independent",
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#181d1f"
+    },
+    "editor.formatOnSave": true,
+    "prettier.useTabs": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.iconTheme": "vscode-icons",
+    "files.associations": {
+      "*.jsx": "javascriptreact"
+    }
+}
